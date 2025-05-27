@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            padding-top: 130px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        header input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        header button {
+            padding: 10px 20px;
+            background-color: #cd4800;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #0056b3;
+        }
+
+        .material-symbols-outlined {
+            border: 1px solid #CDCDCD;
+            background-color: #cd4800;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        header .material-symbols-outlined {
+            font-size: 24px;
+            color: #333;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        header p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 0;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #cd4800;
+            padding: 10px 20px;
+            position: fixed;
+            top: 90px;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        section {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        aside {
+            width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        aside h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        aside ul li:hover {
+            color: #007bff;
+        }
+
+        article {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        article div {
+            display: flex;
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 160px;
+            }
+
+            header {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            header input {
+                width: 100%;
+            }
+
+            nav {
+                top: 90px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            article div {
+                flex-direction: column;
+            }
+
+            article div img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logo" height="40">
+    <input type="text" placeholder="Nhập từ khóa cần tìm">
+    <button>Tìm kiếm</button>
+    <span class="material-symbols-outlined">local_mall</span>
+    <p>Giỏ hàng</p>
+    <span class="material-symbols-outlined">person</span>
+    <p>Tài khoản</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Hot Deals</a></li>
+        <li><a href="#">Làm Đẹp & Spa</a></li>
+        <li><a href="#">Thời Trang</a></li>
+        <li><a href="#">Công Nghệ</a></li>
+        <li><a href="#">Tin Tức</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a></li>
+    </ul>
+</nav>
+
+<section>
+    <aside>
+        <h2>Danh mục sản phẩm</h2>
+        <ul>
+            <li>Hot Deal</li>
+            <li>Phụ kiện & Công nghệ</li>
+            <li>Du lịch & Nghỉ dưỡng</li>
+            <li>Sách & VPP</li>
+            <li>Thời trang</li>
+            <li>Thể thao & Giải trí</li>
+            <li>Spa & Massage</li>
+            <li>Điện lạnh & Gia dụng</li>
+            <li>Mỹ phẩm & Sức khỏe</li>
+            <li>Xem tất cả sản phẩm</li>
+        </ul>
+    </aside>
+    <article>
+        <img src="banner.jpg" alt="Banner chính">
+        <div>
+            <img src="banner2.png" alt="Sub banner 1" style="width: 50%;">
+            <img src="banner3.png" alt="Sub banner 2" style="width: 50%;">
+        </div>
+    </article>
+</section>
+
+<footer>
+    <p>© 2025 Tu Design. All rights reserved.</p>
+</footer>
+</body>
+</html>
