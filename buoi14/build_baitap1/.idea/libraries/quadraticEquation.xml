@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="quadraticEquation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../baitap1/out/artifacts/quadraticEquation/quadraticEquation.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

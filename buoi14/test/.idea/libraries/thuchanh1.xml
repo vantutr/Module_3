@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="thuchanh1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../thuchanh1/out/artifacts/thuchanh1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
